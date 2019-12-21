@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.Api.Repository.TodoRepository;
 import com.Api.entity.Article;
 import com.Api.entity.Declaration;
 import com.Api.entity.Douanier;
+import com.Api.entity.Todo;
 import com.Api.service.ArticleService;
 import com.Api.service.DeclarationService;
 import com.Api.service.DouanierService;
@@ -26,6 +28,8 @@ public class Controller {
 	private DeclarationService declarationService  ; 
 	@Autowired
 	private ArticleService articleService  ; 
+	@Autowired
+	private TodoRepository todorep ; 
 	
 	@RequestMapping("/hello")
 	public String sayhello() {
@@ -35,6 +39,11 @@ public class Controller {
 	@RequestMapping("/getAll")
 	public List<Douanier> getAllDouanier() {
 		return dService.getAllDouanier() ;
+		}	
+	
+	@RequestMapping("/getTodos")
+	public List<Todo> getAllTodos() {
+		return todorep.findAll() ; 
 		}	
 	
 	@RequestMapping("/getAllDeclaration")
