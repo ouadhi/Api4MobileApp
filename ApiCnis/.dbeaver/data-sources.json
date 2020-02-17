@@ -1,0 +1,31 @@
+{
+	"folders": {},
+	"connections": {
+		"informix-16f3efb5a57-5e81a0b5b5372ac5": {
+			"provider": "generic",
+			"driver": "informix",
+			"name": "Informix - testechange",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "10.1.1.158",
+				"port": "29999",
+				"server": "ids_cdt2",
+				"database": "testechange",
+				"url": "jdbc:informix-sqli://10.1.1.158:29999/testechange:INFORMIXSERVER=ids_cdt2",
+				"type": "dev",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
