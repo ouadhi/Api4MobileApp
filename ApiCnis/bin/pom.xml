@@ -41,18 +41,17 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.ibm.informix/jdbc
+		<!-- https://mvnrepository.com/artifact/com.ibm.informix/jdbc -->
 		<dependency>
 			<groupId>com.ibm.informix</groupId>
 			<artifactId>jdbc</artifactId>
-			<version>4.10.8.1</version>
+			<version>4.10.6.20151104</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-		 -->
 	</dependencies>
 
 	<build>
