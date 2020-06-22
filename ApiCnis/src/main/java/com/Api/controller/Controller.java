@@ -29,7 +29,7 @@ public class Controller {
 	
 	@RequestMapping("/hello")
 	public String sayhello() {
-		return "Bonjour"; 
+		return "Bonjour yassines"; 
 	}	
 	
 	@RequestMapping("/getAll")
