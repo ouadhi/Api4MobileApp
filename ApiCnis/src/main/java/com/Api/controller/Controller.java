@@ -32,6 +32,9 @@ public class Controller {
 		return "Bonjour yassines"; 
 	}	
 	
+	
+	
+	
 	@RequestMapping("/getAll")
 	public List<Douanier> getAllDouanier() {
 		return dService.getAllDouanier() ;
